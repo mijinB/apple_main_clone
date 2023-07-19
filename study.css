@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  color: #1D1D1F;
 }
 header {
   display: flex;
@@ -10,12 +11,23 @@ header {
   top: 0;
   width: 100%;
   height: 45px;
-  /* backdrop-filter: blur(20px); */
+  backdrop-filter: blur(20px);
   background-color: rgba(251, 251, 253, .8);
-  opacity: 0.8;
 }
 footer {
   background-color: grey;
+}
+a {
+  text-decoration: none;
+}
+a:link {
+  color: #06c;
+}
+a:visited {
+  color: #06c;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 .logo-image {
@@ -37,10 +49,16 @@ footer {
   margin-left: 2.4vh;
   margin-right: 2.4vh;
 }
+.banner-href {
+  margin-left: 0.5vh;
+}
 
 #banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 45px;
-  background-color: blue;
+  font-size: 13px;
 }
 #widthScreen {
   height: 700px;
