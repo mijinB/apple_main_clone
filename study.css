@@ -52,6 +52,17 @@ a:hover {
 .banner-href {
   margin-left: 0.5vh;
 }
+.iphone14pro {
+  object-fit: cover;
+  transform: translateY(-12px);
+  width: 100%;
+  height: 100%;
+}
+.iphone14 {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 
 #banner {
   display: flex;
@@ -61,8 +72,8 @@ a:hover {
   font-size: 13px;
 }
 #widthScreen {
-  height: 700px;
-  background-color: blueviolet;
+  overflow: hidden;
+  height: 704px;
 }
 #gridScreen {
   background-color: yellow;
