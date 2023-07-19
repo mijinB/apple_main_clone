@@ -53,10 +53,13 @@ a:hover {
   margin-left: 0.5vh;
 }
 .iphone14pro {
-  object-fit: cover;
   transform: translateY(-12px);
   width: 100%;
   height: 100%;
+  /* background-image: url(assets/images/iphone14pro.jpg);
+  background-size: cover;
+  background-position: center; */
+  background: url(assets/images/iphone14pro.jpg) center/cover;
 }
 .iphone14 {
   object-fit: cover;
