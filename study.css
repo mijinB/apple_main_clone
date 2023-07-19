@@ -58,21 +58,36 @@ a:hover {
 .banner-href {
   margin-left: 0.5vh;
 }
-.iphone14pro-text {
+.headline {
+  line-height: 1.17865;
+  font-size: 55px;
+  letter-spacing: -3px;
+  font-weight: 600;
+}
+.subhead {
+  margin-top: 6px;
+  line-height: 1.10722;
+  font-size: 25px;
+  letter-spacing: -3px;
+}
+.cta-links {
+  margin-top: 0.65em;
+}
+.macbook_air-text {
   position: relative;
   z-index: 1;
-  color: #fff;
+  padding-top: 55px;
   text-align: center;
 }
-.iphone14pro {
+.macbook_air {
   position: absolute;
   top: 0;
   transform: translateY(-12px);
   width: 100%;
   height: 100%;
-  background: url(./assets/images/iphone14pro.jpg) center/cover;
+  background: url(./assets/images/macbook_air.jpg) center/cover;
 }
-.iphone14 {
+.iphone14pro {
   object-fit: cover;
   width: 100%;
   height: 100%;
