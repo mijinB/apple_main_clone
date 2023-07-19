@@ -7,12 +7,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  z-index: 10000;
   width: 100%;
   height: 45px;
   backdrop-filter: blur(20px);
   background-color: rgba(251, 251, 253, .8);
+}
+main {
+  position: relative;
+  top: 45px;
 }
 footer {
   background-color: grey;
@@ -52,13 +56,17 @@ a:hover {
 .banner-href {
   margin-left: 0.5vh;
 }
+.iphone14pro-text {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
 .iphone14pro {
+  position: absolute;
+  top: 0;
   transform: translateY(-12px);
   width: 100%;
   height: 100%;
-  /* background-image: url(assets/images/iphone14pro.jpg);
-  background-size: cover;
-  background-position: center; */
   background: url(assets/images/iphone14pro.jpg) center/cover;
 }
 .iphone14 {
@@ -75,6 +83,7 @@ a:hover {
   font-size: 13px;
 }
 #widthScreen {
+  position: relative;
   overflow: hidden;
   height: 704px;
 }
