@@ -1,28 +1,129 @@
 @import url(./reset.css);
 
-body {
-  margin: 0;
-  padding: 0;
-  color: #1D1D1F;
+@font-face {
+	font-family:'SFPro';
+	font-style:normal;
+	font-weight:100;
+	src:local('☺'), url("./assets/fonts/SF-Pro-Display/SF-Pro-Display-Ultralight.otf") format("opentype");
+	/* (C) 2019 Apple Inc. All rights reserved.
+ */
 }
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  z-index: 10000;
-  width: 100%;
-  height: 45px;
-  backdrop-filter: blur(20px);
-  background-color: rgba(251, 251, 253, .8);
+
+@font-face {
+	font-family:'SFPro';
+	font-style:normal;
+	font-weight:200;
+	src:local('☺'), url("./assets/fonts/SF-Pro-Display/SF-Pro-Display-Thin.otf") format("opentype");
+	/* (C) 2019 Apple Inc. All rights reserved.
+ */
 }
-main {
-  position: relative;
-  top: 45px;
+
+@font-face {
+	font-family:'SFPro';
+	font-style:normal;
+	font-weight:300;
+	src:local('☺'), url("./assets/fonts/SF-Pro-Display/SF-Pro-Display-Light.otf") format("opentype");
+	/* (C) 2019 Apple Inc. All rights reserved.
+ */
 }
-footer {
-  background-color: grey;
+
+@font-face {
+	font-family:'SFPro';
+	font-style:normal;
+	font-weight:400;
+  src:local('☺'), url("./assets/fonts/SF-Pro-Display/SF-Pro-Display-Regular.otf") format("opentype");
+	/* (C) 2019 Apple Inc. All rights reserved.
+ */
 }
+
+@font-face {
+	font-family:'SFPro';
+	font-style:normal;
+	font-weight:500;
+	src:local('☺'), url("./assets/fonts/SF-Pro-Display/SF-Pro-Display-Medium.otf") format("opentype");
+	/* (C) 2019 Apple Inc. All rights reserved.
+ */
+}
+
+@font-face {
+	font-family:'SFPro';
+	font-style:normal;
+	font-weight:600;
+	src:local('☺'), url("./assets/fonts/SF-Pro-Display/SF-Pro-Display-Semibold.otf") format("opentype");
+	/* (C) 2019 Apple Inc. All rights reserved.
+ */
+}
+
+@font-face {
+	font-family:'SFPro';
+	font-style:normal;
+	font-weight:700;
+	src:local('☺'), url("./assets/fonts/SF-Pro-Display/SF-Pro-Display-Bold.otf") format("opentype");
+	/* (C) 2019 Apple Inc. All rights reserved.
+ */
+}
+
+@font-face {
+	font-family:'SFPro';
+	font-style:normal;
+	font-weight:800;
+	src:local('☺'), url("./assets/fonts/SF-Pro-Display/SF-Pro-Display-Heavy.otf") format("opentype");
+	/* (C) 2019 Apple Inc. All rights reserved.
+ */
+}
+
+@font-face {
+	font-family:'SFPro';
+	font-style:normal;
+	font-weight:900;
+	src:local('☺'), url("./assets/fonts/SF-Pro-Display/SF-Pro-Display-Black.otf") format("opentype");
+	/* (C) 2019 Apple Inc. All rights reserved.
+ */
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  font-weight: 100;
+  src: url(./assets/fonts/NotoSansKR/NotoSansKR-Thin.otf) format("opentype");
+  unicode-range: U+AC00-D7A3;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  font-weight: 300;
+  src: url(./assets/fonts/NotoSansKR/NotoSansKR-Light.otf) format("opentype");
+  unicode-range: U+AC00-D7A3;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  font-weight: 400;
+  src: url(./assets/fonts/NotoSansKR/NotoSansKR-Regular.otf) format("opentype");
+  unicode-range: U+AC00-D7A3;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  font-weight: 500;
+  src: url(./assets/fonts/NotoSansKR/NotoSansKR-Medium.otf) format("opentype");
+  unicode-range: U+AC00-D7A3;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  font-weight: 700;
+  src: url(./assets/fonts/NotoSansKR/NotoSansKR-Bold.otf) format("opentype");
+  unicode-range: U+AC00-D7A3;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  font-weight: 900;
+  src: url(./assets/fonts/NotoSansKR/NotoSansKR-Black.otf) format("opentype");
+  unicode-range: U+AC00-D7A3;
+}
+
+
 a {
   text-decoration: none;
 }
@@ -36,50 +137,80 @@ a:hover {
   text-decoration: underline;
 }
 
-.logo-image {
+body {
+  margin: 0;
+  padding: 0;
+  color: #1D1D1F;
+  font-family: 'NotoSans', 'SFPro';
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+  height: 45px;
+  backdrop-filter: blur(20px);
+  background-color: rgba(251, 251, 253, .8);
+}
+header .logo-image {
   width: 25px;
   margin-left: 2.4vh;
   margin-right: 2.4vh;
 }
-.icon-image {
+header .header-menu {
+  flex-direction: row;
+  font-size: 11px;
+  font-weight: 400;
+}
+header .header-menu-item {
+  margin-left: 2.4vh;
+  margin-right: 2.4vh;
+}
+header .icon-image {
   width: 20px;
   margin-left: 2.4vh;
   margin-right: 2.4vh;
 }
-.header-menu {
-  flex-direction: row;
-  font-size: 11px;
-  font-weight: 600;
+
+main {
+  position: relative;
+  top: 45px;
 }
-.header-menu-item {
-  margin-left: 2.4vh;
-  margin-right: 2.4vh;
+main .banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  font-size: 13px;
+  font-weight: 300;
 }
-.banner-href {
+main .banner-href {
   margin-left: 0.5vh;
 }
-.headline {
+
+main .widthScreen {
+  position: relative;
+  overflow: hidden;
+  height: 704px;
+}
+main .headline {
   line-height: 1.17865;
-  font-size: 55px;
-  letter-spacing: -3px;
+  font-size: 56px;
   font-weight: 600;
 }
-.subhead {
+main .subhead {
   margin-top: 6px;
   line-height: 1.10722;
   font-size: 25px;
-  letter-spacing: -3px;
 }
-.cta-links {
+main .cta-links {
   margin-top: 0.65em;
+  line-height: 1.52381;
 }
-.macbook_air-text {
-  position: relative;
-  z-index: 1;
-  padding-top: 55px;
-  text-align: center;
-}
-.macbook_air {
+main .macbook_air {
   position: absolute;
   top: 0;
   transform: translateY(-12px);
@@ -87,27 +218,26 @@ a:hover {
   height: 100%;
   background: url(./assets/images/macbook_air.jpg) center/cover;
 }
-.iphone14pro {
+main .macbook_air-text {
+  position: relative;
+  z-index: 1;
+  padding-top: 55px;
+  text-align: center;
+}
+main .iphone14pro {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
 
-#banner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 45px;
-  font-size: 13px;
-}
-#widthScreen {
-  position: relative;
-  overflow: hidden;
-  height: 704px;
-}
-#gridScreen {
+main .gridScreen {
   background-color: yellow;
 }
-#rowScroll {
+
+main .rowScroll {
   background-color: aqua;
+}
+
+footer {
+  background-color: grey;
 }
