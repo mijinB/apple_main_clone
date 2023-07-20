@@ -224,6 +224,7 @@ main .img-click {
   position: absolute;
   inset: 0;
   z-index: 2;
+  transform: translateY(-12px);
 }
 main .widthScreen-black-text {
   padding-top: 55px;
