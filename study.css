@@ -226,13 +226,11 @@ main .img-click {
   z-index: 2;
   transform: translateY(-12px);
 }
-main .widthScreen-black-text {
+main .widthScreen-text {
   padding-top: 55px;
   text-align: center;
 }
-main .widthScreen-white-text {
-  padding-top: 55px;
-  text-align: center;
+main .white-text {
   color: white;
 }
 main .dark-a {
@@ -264,7 +262,74 @@ main .two-links {
 }
 
 main .gridScreen {
-  background-color: yellow;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  overflow: hidden;
+}
+main .gridScreen-item {
+  position: relative;
+  width: 49%;
+  height: 580px;
+}
+main .apple-watch {
+  position: absolute;
+  top: 0;
+  transform: translate(12px, -12px);
+  width: 100%;
+  height: 100%;
+  background: url(./assets/images/apple_watch.jpg) center/cover;
+}
+main .logo-apple-watch {
+  position: relative;
+  z-index: 1;
+}
+main .ipadpro {
+  position: absolute;
+  top: 0;
+  transform: translate(12px, -12px);
+  width: 100%;
+  height: 100%;
+  background: url(./assets/images/ipadpro.jpg) center/cover;
+}
+main .airpods-pro {
+  position: absolute;
+  top: 0;
+  transform: translate(12px, -12px);
+  width: 100%;
+  height: 100%;
+  background: url(./assets/images/airpods_pro.jpg) center/cover;
+}
+main .mac-studio {
+  position: absolute;
+  top: 0;
+  transform: translate(12px, -12px);
+  width: 100%;
+  height: 100%;
+  background: url(./assets/images/mac_studio.jpg) center/cover;
+}
+main .mac-pro {
+  position: absolute;
+  top: 0;
+  transform: translate(12px, -12px);
+  width: 100%;
+  height: 100%;
+  background: url(./assets/images/mac_pro.jpg) center/cover;
+}
+main .ipad {
+  position: absolute;
+  top: 0;
+  transform: translate(12px, -12px);
+  width: 100%;
+  height: 100%;
+  background: url(./assets/images/ipad.jpg) center/cover;
+}
+main .gridScreen-text {
+  padding-top: 53px;
+  text-align: center;
+}
+main .headline-mini {
+  font-size: 40px;
 }
 
 main .rowScroll {
