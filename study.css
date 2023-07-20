@@ -292,6 +292,17 @@ main .ipadpro {
   height: 100%;
   background: url(./assets/images/ipadpro.jpg) center/cover;
 }
+main .m2-chip {
+  position: relative;
+  z-index: 1;
+  margin-left: 3px;
+}
+main .ipadpro-subhead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0em;
+}
 main .airpods-pro {
   position: absolute;
   top: 0;
