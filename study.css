@@ -331,6 +331,13 @@ main .gridScreen-text {
 main .headline-mini {
   font-size: 40px;
 }
+main .subhead-mini {
+  font-size: 19px;
+}
+main .two-links-mini {
+  width: 180px;
+  font-size: 15px;
+}
 
 main .rowScroll {
   background-color: aqua;
