@@ -179,6 +179,12 @@ main {
   position: relative;
   top: 45px;
 }
+main .white-text {
+  color: white;
+}
+main .dark-a {
+  color: #2997FF;
+}
 main .banner {
   display: flex;
   align-items: center;
@@ -220,7 +226,7 @@ main .iphone14 {
   height: 100%;
   background: url(./assets/images/iphone14.jpg) center/cover;
 }
-main .img-click {
+main .widthScreen-img-click {
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -229,12 +235,6 @@ main .img-click {
 main .widthScreen-text {
   padding-top: 55px;
   text-align: center;
-}
-main .white-text {
-  color: white;
-}
-main .dark-a {
-  color: #2997FF;
 }
 main .headline {
   position: relative;
@@ -335,6 +335,12 @@ main .ipad {
   height: 100%;
   background: url(./assets/images/ipad.jpg) center/cover;
 }
+main .gridScreen-img-click {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  transform: translate(12px, -12px);
+}
 main .gridScreen-text {
   padding-top: 53px;
   text-align: center;
@@ -350,10 +356,59 @@ main .two-links-mini {
   font-size: 15px;
 }
 
-main .rowScroll {
-  background-color: aqua;
+main .swiper {
+  width: 100%;
+  height: 665.25979px;
 }
+main .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-width: 1250px;
+  width: 60%;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+main .swiper-slide img{
+  display: block;
+  width: calc(100% - 15px);
+  height: 100%;
+  object-fit: cover;
+}
+main .swiper-slide-prev,.swiper-slide-next {
+  opacity: 0.2;
+}
+main .pagination {
+  position: relative;
+  height: 85px;
+}
+main .swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0 !important;
+  height: 40px;
+}
+/* main .slide-img-text {
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+main .genre {
+  font-size: 22px;
+  font-weight: 600;
+}
+main .description {
+  font-size: 22px;
+} */
 
 footer {
+  height: 500px;
   background-color: grey;
 }
